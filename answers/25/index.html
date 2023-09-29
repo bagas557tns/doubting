@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="html-normal">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>25</title>
+</head>
+<body>
+        <a class="link" style="
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        z-index: -10;
+        font-size: 1vw;
+        font-family: Neue Haas Unica Pro, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 0em;
+        filter: blur(0.75px);
+    " href="../1/index.html">NEXT</a>
+	<div class="container">
+	<div id="paragraph">Doubt as a tool to navigate defaults.</div>
+	<button id="toggle">Invert</div>
+	</div>
+
+	<script type="text/javascript">
+function toggleInvert() {
+            const html = document.documentElement;
+            html.classList.toggle('invert');
+            
+            const paragraph = document.getElementById('paragraph');
+            paragraph.textContent = html.classList.contains('invert')
+                ? 'Defaults as a mode to mitigate doubts.'
+                : 'Doubt as a tool to navigate defaults.';
+        }
+
+        const toggle = document.getElementById('toggle');
+        toggle.addEventListener('click', toggleInvert);
+	</script>
+</body>
+</html>
